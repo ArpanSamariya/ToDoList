@@ -1,0 +1,57 @@
+<!docutype html>
+<head>
+	<title>To Do</title>
+	<meta charset = 'utf-8'>
+</head>
+<script>
+
+</script>
+<style >
+	#task
+	{
+		height: 50px;
+		width: 500px;
+		border-top:  none;
+		border-left:  none;
+		border-right:  none;
+		border-bottom-color:  black;
+		font-size: 20px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;	
+
+	}
+	#task:focus
+	{
+		outline: none;
+	}
+
+	#taskDiv
+	{
+		text-align:   center;
+		margin: auto;
+		/*border: 1px solid black	;*/
+		padding: 100px;
+	}
+</style>
+
+<body>
+	<!--
+	<button  onclick= "( function() { alert('Added');})()">Submit</button>
+	(function(){  alert('Input'); task.value=""; })()" 
+		onclick="(function(){ alert('df'); })()  
+	-->
+	<div id = "taskDiv">
+		<h1 style="border-color: black; font-family: helvetica"> To Do List</h1>
+	</br>
+	</br>
+	</br>
+	</br>
+	<form  id="inputForm" action='' onsubmit ="inputForm.reset()"  >
+	<input type="checkbox" name="statusAll" style="width: 40px; height: 20px; margin-bottom: 0px">
+	<input type="text" id= "task" value = "What you are up to, today?" onfocus="task.value='' " > 
+	
+	<input type="submit" value="Add" style="height: 20px; margin-left: 30px; margin-bottom: 0px;padding: auto" >
+    </form>
+    </div>
+
+	</body>
